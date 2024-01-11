@@ -1,0 +1,192 @@
+/* Below contains the default styles */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+}
+body {
+    display: flex;
+    background-color: hsl(222, 26%, 31%);
+    align-content: center;
+    justify-content: center;
+    margin-top: 60px;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    
+}
+.calc-header {
+    display: flex;
+    justify-content: center;
+    justify-content: start;
+    color: #ffff;
+    gap: 300px;
+}
+.calc, .theme{
+    align-self: center;
+}
+
+.theme-toggle {
+    display: flex;
+    gap: 20px;
+}
+.toggle-btn {
+    border-radius: 50%;
+    background-color: hsl(6, 63%, 50%);
+    border: none;
+}
+.toggle-num {
+    display: flex;
+    gap: 35%;
+    padding-left: 14px;
+}
+.button-div {
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 30px;
+    width: 116px;
+    padding: 5px;
+}
+.cal-display {
+    background-color: hsl(224, 36%, 15%);
+    color : #ffffff;
+    padding: 20px;
+    text-align: right;
+    font-size: 3em;
+    overflow: hidden;
+    margin: 10px 0 30px;
+    border-radius: 6px;
+}
+.cal-inputs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color: hsl(223, 31%, 20%);
+    padding: 20px;
+    border-radius: 7px;
+}
+button {
+    padding: 10px;
+    text-align: center;
+    font-size: 32px;
+    background-color: hsl(30, 25%, 89%);
+    border: hsl(28, 16%, 65%);
+}
+.seven, .eight, .nine, .del {
+    grid-row: 1;
+}
+.del, .reset{
+    background-color: hsl(225, 21%, 49%);
+    border: hsl(224, 28%, 35%);
+    color: #fff;
+}
+.four, .five, .six, .plus {
+    grid-row: 2;
+}
+.one, .two, .three, .minus {
+    grid-row: 3;
+}
+.period, .zero, .for-slash, .modulus {
+    grid-row: 4;
+}
+.reset, .equal {
+    grid-row: 5;
+}
+.reset{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.equal{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: hsl(6, 63%, 50%);
+    border: hsl(6, 70%, 34%);
+}
+button {
+    border-radius: 10px;
+    border: outset;
+}
+button:hover{
+    cursor: pointer;
+}
+
+
+/* Below contains the second theme */
+
+
+.second-theme {
+    background-color: hsl(0, 0%, 90%);
+}
+.second-theme .calc-header {
+    background-color: hsl(0, 0%, 90%);
+    color: grey;
+}
+.second-theme .toggle-btn {
+    background-color: hsl(6, 63%, 50%);
+}
+
+.second-theme .button-div {
+    background-color: hsl(0, 5%, 81%);
+    text-align: center;
+}
+.second-theme .cal-display {
+    background-color: hsl(0, 0%, 93%);
+    color : grey;
+}
+.second-theme .cal-inputs {
+    background-color: hsl(0, 5%, 81%);
+}
+
+.second-theme .del, .second-theme .reset{
+    background-color: hsl(185, 42%, 37%);
+    border: hsl(185, 58%, 25%);
+    color: #fff;
+}
+.second-theme .equal{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: hsl(29, 91%, 50%);
+    border: hsl(29, 91%, 50%);
+}
+
+
+/* Below contains the third theme */
+
+.third-theme {
+    background-color: hsl(268, 75%, 9%);
+}
+.third-theme .calc-header {
+    color: hsl(52, 100%, 62%);
+}
+.third-theme .toggle-btn {
+    background-color: hsl(176, 100%, 44%);
+}
+.third-theme .button-div {
+    background-color: hsl(268, 71%, 12%);
+    text-align: right;
+}
+.third-theme .cal-display {
+    background-color: hsl(268, 71%, 12%);
+    color : hsl(52, 100%, 62%);
+}
+.third-theme .cal-inputs {
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+}
+.third-theme .del, .third-theme .reset{
+    background-color: hsl(290, 70%, 36%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-bottom: ridge;
+    border-bottom-color: #871c9c;
+}
+.third-theme .equal{
+    background-color: hsl(176, 100%, 44%);
+    border: hsl(177, 92%, 70%);
+    color: hsl(198, 20%, 13%);
+}
+.third-theme button {
+    background-color: hsl(281, 89%, 26%);
+    border: none;
+    border-bottom: ridge;
+    border-bottom-color: #b05cff;
+}

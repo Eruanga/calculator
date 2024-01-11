@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikki Multi-View Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap">
+    <link rel="icon" href="favicon icon link goes here">
+</head>
+<body>
+    <div class="container">
+        <div class="calc-header">
+            <div class="calc">
+                <h3><strong>calc</strong></h3>
+            </div>
+            <div class="theme-toggle">
+                <div class="theme" style="font-size: 12px;">
+                    THEME
+                </div>
+                <div class="toggle">
+                    <div class="toggle-num">
+                        <div id="one">
+                            1
+                        </div>
+                        <div id="two">
+                            2
+                        </div>
+                        <div class="three">
+                            3
+                        </div>
+                    </div>
+                    <div class="button-div">
+                            <button class="toggle-btn" onclick="toggleTheme()">
+
+                            </button>
+                    </div>
+                    <!-- <div class="button-div">
+                        <button id="theme-btn2">
+                    </div>
+                    <div class="button-div">
+                        <button id="theme-btn3">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="cal-display" id="cal-display">
+            0
+        </div>
+        <div class="cal-inputs" id="cal-inputs" onclick="buttonClick(event)">
+            <!-- first grid row -->
+            <button class="seven" >
+                7
+            </button>
+            <button class="eight">
+                8
+            </button>
+            <button class="nine">
+                9 
+            </button>
+            <button class="del" onclick="backspace()">
+                Del
+            </button>
+
+            <!-- second grid row -->
+            <button class="four">
+                4 
+            </button>
+            <button class="five">
+                5
+            </button>
+            <button class="six">
+              6  
+            </button>
+            <button class="plus" onclick="appendOperator('+')">
+                +
+            </button>
+
+            <!-- third grid row -->
+            <button class="one">
+                1
+            </button>
+            <button class="two">
+                2
+            </button>
+            <button class="three">
+                3
+            </button>
+            <button class="minus">
+                -
+            </button>
+
+            <!-- fourth grid row -->
+            <button class="period">
+                .
+            </button>
+            <button class="zero">
+                0
+            </button>
+            <button class="for-slash">
+                /
+            </button>
+            <button class="modulus">
+                %
+            </button>
+
+            <!-- fifth grid row -->
+            <button class="reset" onclick="clearDisplay()">
+                RESET
+            </button>
+            <button class="equal">
+                =
+            </button>
+            
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
